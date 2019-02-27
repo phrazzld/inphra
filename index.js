@@ -25,4 +25,4 @@ const run = cmds => {
   })
 }
 
-run(commands)
+run(helpers.generateCommands(gitUrl, project))
