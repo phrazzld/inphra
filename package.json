@@ -1,12 +1,12 @@
 {
   "name": "inphra",
   "version": "1.0.0",
-  "description": "Boilerplate as a service",
-  "main": "index.js",
+  "description": "Boilerplate as a service.",
+  "main": "inphra.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Phaedrus Raznikov",
   "license": "ISC",
   "dependencies": {
     "child_process": "^1.0.2"

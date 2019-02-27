@@ -1,5 +1,7 @@
 // helpers.js
 
+const fs = require('fs')
+
 const check = err => {
   if (err) {
     console.error(err)

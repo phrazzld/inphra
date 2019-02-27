@@ -1,7 +1,6 @@
-// index.js
+// inphra.js
 
 const exec = require('child_process').exec
-const fs = require('fs')
 const helpers = require('./helpers')
 const config = require('./config')
 
@@ -25,4 +24,4 @@ const run = cmds => {
   })
 }
 
-run(helpers.generateCommands(gitUrl, project))
+run(config.generateCommands(gitUrl, project))
