@@ -4,8 +4,8 @@ const exec = require('child_process').exec
 const helpers = require('./helpers')
 const config = require('./config')
 
-const gitUrl = config.boilerplates.express
-const project = helpers.validatedProject(process.argv[2], 0)
+const command = helpers.getCommand()
+const project = helpers.getProject()
 
 const run = cmds => {
   const cmd = cmds.shift()
@@ -24,4 +24,8 @@ const run = cmds => {
   })
 }
 
-run(config.generateCommands(gitUrl, project))
+if (command === 'express') {
+  run(config.generateExpressCommands(project))
+} else if (command === 'chatbot') {
+  run(config.generateChatbotCommands(project))
+}
